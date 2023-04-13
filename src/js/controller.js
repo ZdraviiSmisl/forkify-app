@@ -130,6 +130,9 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFeature = function () {
+  console.log('You are so dumb men. Get out of here');
+};
 //This function init actually is a subscriber function for subsctiption to events which function publisher will regester. Init function will be once executed
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
@@ -139,5 +142,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearch);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 init();
