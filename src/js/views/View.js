@@ -2,6 +2,10 @@
 import icons from '../../img/icons.svg';
 export default class View {
   _data;
+
+  _clear() {
+    this._parentElement.innerHTML = '';
+  }
   //render  parametr blocks the generateMarcup method of priviewView and return and allow us to return an array strings and then join them into one string in bookmarksView and resultView
   render(data, render = true) {
     //in the begining we check if data is no empty array and not undefined
@@ -88,9 +92,5 @@ export default class View {
     `;
     this._clear();
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
-  }
-
-  _clear() {
-    this._parentElement.innerHTML = '';
   }
 }
