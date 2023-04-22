@@ -5,7 +5,7 @@
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --no-scope-hoist"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Evgen",
   "license": "ISC",
@@ -18,8 +18,8 @@
     "sass": "^1.58.3"
   },
   "dependencies": {
-    "@mathematics/fraction": "^1.0.0-beta.4",
     "core-js": "^3.28.0",
+    "fractional": "^1.0.0",
     "regenerator-runtime": "^0.13.11"
   }
 }
