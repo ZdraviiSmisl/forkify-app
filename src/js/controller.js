@@ -131,7 +131,7 @@ const controlAddRecipe = async function (newRecipe) {
 };
 
 const newFeature = function () {
-  console.log('You are so dumb men. Get out of here');
+  console.log("I can't figure out why I'm still poor");
 };
 //This function init actually is a subscriber function for subsctiption to events which function publisher will regester. Init function will be once executed
 const init = function () {
