@@ -47,6 +47,10 @@ export default class View {
     });
   }
 
+  _clear() {
+    this._parentElement.innerHTML = '';
+  }
+
   renderSpiner() {
     const markup = `
       <div class="spinner">
@@ -88,9 +92,5 @@ export default class View {
     `;
     this._clear();
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
-  }
-
-  _clear() {
-    this._parentElement.innerHTML = '';
   }
 }
